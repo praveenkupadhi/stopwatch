@@ -6,11 +6,10 @@ export const Stopwatch = () => {
 	const [sec, setSec] = useState(0);
 
 	let interval = null;
-	// sagar.jain@quicksell.co
 
 	useEffect(() => {
 		if (isStart !== false) {
-			interval = setInterval(() => {
+			interval = setTimeout(() => {
 				if (sec === 0) {
 					setTimeout(() => {
 						setSec(59);
@@ -38,6 +37,7 @@ export const Stopwatch = () => {
 		setMin(5);
 		setSec(0);
 		setIsStart(false);
+		clearInterval(interval);
 	}
 
 	return (
