@@ -1,2 +1,2 @@
-1. npm i - to install all node_modules
-2. npm run start - to start the project
+1. pnpm i - to install all node_modules
+2. pnpm run start - to start the project
