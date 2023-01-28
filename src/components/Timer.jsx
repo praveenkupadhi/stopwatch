@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-export const Stopwatch = () => {
-	const [isStart, setIsStart] = useState(false);
-	const [min, setMin] = useState(5);
-	const [sec, setSec] = useState(0);
-
+export const Timer = () => {
+	const [isStart, setIsStart] = useState(false),
+		[min, setMin] = useState(5),
+		[sec, setSec] = useState(0);
 	let interval = null;
 
 	useEffect(() => {
